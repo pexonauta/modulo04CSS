@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;900&display=swap');
+
+:root {
+    --varfontnoto: 'Noto Sans', sans-serif;
+    --varfontpoppis: 'Poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+html, body {
+    height: 100%;
+}
+
+header {
+    background-image: linear-gradient(90deg, #07c972, #359d9e);
+}
+header .container {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.logo h1 {
+    font-family: var(--varfontnoto);
+    color: #e4d9d9;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.1rem;
+    margin-left: 48px;
+    padding: 6px 10px;
+    transition: 0.3s;
+    font-family: var(--varfontpoppis);
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+}
+@media(max-width: 964px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media(max-width: 809px) {
+    html {
+        font-size: 40%;
+    }
+}
+@media(max-width: 728px) {
+    nav {
+        display: none;
+    }
+    .menu-burguer {
+        width: 40px;
+        height: 30px;
+
+        cursor: pointer;
+    }
+    .one,.two,.three {
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        
+        transition-duration: 0.3s;
+    }
+
+    .menu-section.on {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-image: linear-gradient(150deg, #07c972, #359d9e);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+
+    .menu-section.on .menu-burguer {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .menu-section.on .menu-burguer .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    .menu-section.on .menu-burguer .two {
+        opacity: 0;;
+    }
+    .menu-section.on .menu-burguer .three {
+        transform: rotate(-45deg) translate(9px, -8px);
+    }
+
+    .menu-section.on nav ul {
+        display: block;
+        text-align: center;
+    }
+    .menu-section.on nav ul li a{
+        transition-duration: 0.3s;
+        font-size: 5rem;
+        line-height: 15rem;
+        margin-left: 0;
+    }
+}
