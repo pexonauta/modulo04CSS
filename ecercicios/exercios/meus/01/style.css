@@ -122,7 +122,7 @@ nav ul li a:hover {
         transform: rotate(45deg) translate(7px, 7px);
     }
     .menu-section.on .menu-burguer .two {
-        opacity: 0;;
+        opacity: 0;
     }
     .menu-section.on .menu-burguer .three {
         transform: rotate(-45deg) translate(9px, -8px);

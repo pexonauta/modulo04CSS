@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;900&display=swap');
+
+:root {
+    --varfontpoppis: 'Poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+body {
+    background-image: linear-gradient(45deg, #141414, #3f4242) ;
+}
+header {
+    background-image: linear-gradient(90deg, #0f1411, #232726);
+    
+    font-family: var(--varfontpoppis);
+}
+.container {
+    width: 90%;
+    height: 12vh;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo h1{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.redes-socias {
+    margin-top: 10px;
+}
+.redes-socias a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    padding: 6px;
+    transition: 0.3s;
+}
+.redes-socias a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border-radius: 6px;
+}
+.pesquisa {
+    margin-right: 20px;
+}
+.pesquisa input {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.pesquisa label {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.menu-section {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+}
+.one, .two, .three {
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+
+    transition-duration: 0.4s;
+}
+.menu-section nav {
+    display: none;
+}
+
+.menu-section.on {
+    position: absolute;
+    top: 12vh;
+    right: 0;
+
+    width: 50vw;
+    height: 88vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2b2a2a;
+
+    transition-duration: 0.5s;
+}
+
+.menu-section.on nav {
+    display: block;
+}
+
+.menu-section.on .menu-burguer {
+    position: absolute;
+
+    top: -50px;
+    right: 5px;
+}
+
+.menu-section.on .menu-burguer .one {
+    transform: rotate(45deg) translate(5px, 7px);
+}
+
+.menu-section.on .menu-burguer .two {
+    opacity: 0;
+}
+
+.menu-section.on .menu-burguer .three {
+    transform: rotate(-45deg) translate(4px, -7px);
+}
+
+.menu-section.on nav ul {
+    list-style: none;
+}
+
+.menu-section.on nav ul li {
+    margin-top: 80px;
+}
+
+.menu-section.on nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 8px;
+
+    transition: 0.3s;
+}
+
+.menu-section.on nav ul li a:hover {
+    background-color: rgba(17, 17, 17, 0.3);
+    text-decoration: underline;
+    border-radius: 5px;
+}
+    
+@media(max-width: 728px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media(max-width: 520px) {
+    .pesquisa {
+        display: none;
+    }
+}
