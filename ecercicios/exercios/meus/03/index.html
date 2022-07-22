@@ -11,21 +11,23 @@
     <title>Quiz</title>
 </head>
 <body>
+    <div class="slideshow">
+        <img class="disponivel" src="img/slidesho1.jpg" alt="">
+    </div>
     <header>
         <div class="logo">
-            <h1>Quiz - Pergunta E Resposta</h1>
+            <h1 id="titulo">Quiz - Pergunta E Resposta</h1>
+            <span id="pontos"></span>
         </div>
     </header>
     <main>
-        <div class="pontos">
-            <h2 id="pontos"></h2>
-        </div>
         <div class="container">
             <div class="questao">
                 <span id="numquestao"></span>
+                <hr id="linha">
                 <p id="pergunta"></p>
             </div>
-            
+        
             <div class="corpo">
                 <ol type="A" id="alternativas">
                     <li id="a" value="1A" class="respostas" onclick="verificaseAcertou(this, this)"></li>
@@ -35,7 +37,7 @@
                 </ol>
             </div>
             <div class="info-questao">
-                <p>Questão <span id="infoquestao"></span> / <span id="totalquestao"></span></p>
+                <p id="infoFim">Questão <span id="infoquestao"></span> / <span id="totalquestao"></span></p>
             </div>
         </div>
     </main>

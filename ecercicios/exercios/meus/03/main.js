@@ -2,11 +2,14 @@
 let container = document.querySelector('.container')
 let cabeca = document.querySelector('.logo')
 let alternativas = document.querySelector('#alternativas')
-let info = document.querySelector('.info-questao')
+let info = document.querySelector('#infoFim')
+let linha = document.querySelector('#linha')
 
 //Pontuação
 let pontos = 0
 let pontuacao = document.querySelector('#pontos')
+let titulo = document.querySelector('#titulo')
+
 //QUESTÃO 
 let numquestao = document.querySelector('#numquestao')
 let pergunta = document.querySelector('#pergunta')
@@ -30,7 +33,7 @@ const q0 = {
 
 const q1 = {
     questao : 1,
-    pergunta : "Qual Seu Nome",
+    pergunta : "Qual Seu Nome ?",
     alternativaA : "José",
     alternativaB : "Maria",
     alternativaC : "Felipe",
@@ -40,7 +43,7 @@ const q1 = {
 
 const q2 = {
     questao : 2,
-    pergunta : "Qual Carro Você Tem",
+    pergunta : "Qual Carro Você Tem ?",
     alternativaA : "Onix",
     alternativaB : "H20",
     alternativaC : "Palho",
@@ -59,7 +62,7 @@ let totaldequestoes = (questoes.length)-1
 total.textContent = totaldequestoes
 
 // MONTANDO A PRIMEIRA QUESTAO
-numquestao.textContent = q1.questao
+numquestao.textContent = "Questão " + q1.questao
 pergunta.textContent = q1.pergunta
 a.textContent = q1.alternativaA
 b.textContent = q1.alternativaB
@@ -75,7 +78,7 @@ d.setAttribute('value', '1D')
 //MONTANDO AS PROXIMAS QUESTOES
 function proximaQuestao (nQuestao) {
     numero.textContent = nQuestao
-    numquestao.textContent = questoes[nQuestao].questao
+    numquestao.textContent = "Questão " + questoes[nQuestao].questao
     pergunta.textContent = questoes[nQuestao].pergunta
     a.textContent = questoes[nQuestao].alternativaA
     b.textContent = questoes[nQuestao].alternativaB
@@ -125,7 +128,8 @@ function verificaseAcertou(nQuestao, resposta) {
 
     //ATUALIZAR PLACAR
     placar = pontos
-    pontuacao.textContent = "Pontos" + placar
+    titulo.textContent = "Quiz - Pontos " 
+    pontuacao.textContent = placar
     setTimeout(function() {
         proxima = numerodaquestao + 1
 
@@ -141,12 +145,13 @@ function verificaseAcertou(nQuestao, resposta) {
 }
 
 function FimDoJogo() {
-    pontuacao.textContent = "Fim De Jogo"
+    titulo.textContent = "Fim De Jogo"
+    pontuacao.textContent = ""
     numquestao.textContent = ""
+    pergunta.textContent = ""
 
     let pont = ''
     pontos == 0 ? pont = 'ponto' : pont = "pontos"
-    pergunta.textContent = "Voce Conseguiu " + pontos + " " + pont
     info.textContent = "Voce Consegiu " + pontos + " " + pont
 
     a.textContent = ""
@@ -159,9 +164,14 @@ function FimDoJogo() {
     c.setAttribute('value', '0')
     d.setAttribute('value', '0')
 
-    //OCULTAR QUESTAO
+    //OCULTAR QUESTAO 
     alternativas.style.display = 'none'
+    linha.style.display = 'none'
 
+    // Outros 
+    info.style.marginTop = '100px'
+    
+    // Comecar De Novo
     setTimeout(function() {
         location.reload();
     }, 2000)
