@@ -33,25 +33,101 @@ const q0 = {
 
 const q1 = {
     questao : 1,
-    pergunta : "Qual Seu Nome ?",
-    alternativaA : "José",
-    alternativaB : "Maria",
-    alternativaC : "Felipe",
-    alternativaD : "Davi",
-    correta : "Davi",
+    pergunta: "Que Ano Foi Descoberto O Brasil ?",
+    alternativaA : "2000",
+    alternativaB : "1600",
+    alternativaC : "1500",
+    alternativaD : "1400",
+    correta : "1500",
 }
 
 const q2 = {
     questao : 2,
-    pergunta : "Qual Carro Você Tem ?",
-    alternativaA : "Onix",
-    alternativaB : "H20",
-    alternativaC : "Palho",
-    alternativaD : "BMW",
-    correta : "H20",
+    pergunta : "Qual Foi O Primeiro Presidênte Do Brasil",
+    alternativaA: "Deodoro da Fonseca",
+    alternativaB : "Vasco Da Gama",
+    alternativaC : "Getulho Vargas",
+    alternativaD : "Prudente De Moraes",
+    correta: "Deodoro da Fonseca",
+}
+
+const q3 = {
+    questao : 3,
+    pergunta : "Que Dia Foi a Independência Do Brasil",
+    alternativaA : "07/09/1821",
+    alternativaB : "07/09/1822",
+    alternativaC : "07/08/1822",
+    alternativaD : "07/09/1820",
+    correta: "07/09/1822", 
+}
+
+const q4 = {
+    questao : 4,
+    pergunta: "De quem é a famosa frase “Penso, logo existo”?",
+    alternativaA: "Platão",
+    alternativaB: "Galileu Galilei",
+    alternativaC: "Descartes",
+    alternativaD: "Sócrates",
+    correta: "Descartes",
+}
+
+const q5 = {
+    questao : 5,
+    pergunta: "Qual o nome do presidente do Brasil que ficou conhecido como Jango?",
+    alternativaA: "Jânio Quadros",
+    alternativaB: "Jacinto Anjos",
+    alternativaC: "Getúlio Vargas",
+    alternativaD: "João Figueiredo",
+    correta: "João Goulart.",
+}
+
+const q6 = {
+    questao : 6,
+    pergunta: "Quanto tempo a luz do Sol demora para chegar à Terra?",
+    alternativaA: "12 minutos",
+    alternativaB: "1 dia",
+    alternativaC: "12 horas",
+    alternativaD: "8 minutos",
+    correta: "8 minutos",
+}
+const q7 = {
+    questao : 7,
+    pergunta: "Qual o maior animal terrestre?",
+    alternativaA: "Baleia Azul",
+    alternativaB: "Dinossauro",
+    alternativaC: "Elefante africano",
+    alternativaD: "Tubarão Branco",
+    correta: "Elefante africano",
+}
+const q8 = {
+    questao : 8,
+    pergunta: "Quantas casas decimais tem o número pi?",
+    alternativaA: "Duas",
+    alternativaB: "Centenas",
+    alternativaC: "Infinitas",
+    alternativaD: "Vinte",
+    correta: "Infinitas",
+}
+const q9 = {
+    questao : 9,
+    pergunta: "Atualmente, quantos elementos químicos a tabela periódica possui ?",
+    alternativaA: "113",
+    alternativaB: "109",
+    alternativaC: "108",
+    alternativaD: "118",
+    correta: "118",
+}
+const q10 = {
+    questao : 10,
+    pergunta: "Quais os países que têm a maior e a menor expectativa de vida do mundo?",
+    alternativaA: "Japão e Serra Leoa",
+    alternativaB: "Austrália e Afeganistão",
+    alternativaC: "Itália e Chade",
+    alternativaD: "Brasil e Congo",
+    correta: "Japão e Serra Leoa",
 }
 // VETOR DE TODAS AS QUESTOES
-const questoes = [q0, q1, q2]
+const questoes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
 // COLOCANDO A QUANTIDADE DE QUESTOES
 let numero = document.querySelector('#infoquestao')
 let total = document.querySelector('#totalquestao')

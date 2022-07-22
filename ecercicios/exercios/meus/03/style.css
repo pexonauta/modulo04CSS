@@ -36,7 +36,7 @@ body {
 }
 header {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 header .logo{
     width: 80%; 
@@ -68,7 +68,7 @@ header .logo{
 }
 
 main {
-    width: 50vh;
+    width: 60vh;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -102,7 +102,8 @@ main {
     font-size: 1.5em;
 }
 .questao hr {
-    width: 40vh;
+    width: 30vh;
+    margin: auto;
     border: 1px solid rgba(0, 0, 0, 0.6);
 }
 .questao p {
@@ -115,6 +116,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .corpo ol {
@@ -179,6 +181,9 @@ footer p {
         height: 350px;
         font-size: 1.2em;
     }
+    .corpo ol li {
+        font-size: 1.2em;
+    }
 
     footer p {
         font-size: 2em;
@@ -186,7 +191,6 @@ footer p {
 }
 @media(max-width: 580px) {
     header {
-        margin-top: 40px;
         margin-bottom: 50px;
     }
     .logo h1 {
@@ -194,5 +198,11 @@ footer p {
     }
     footer p {
         font-size: 1.5em;
+    }
+}
+
+@media(max-height: 550px) {
+    header {
+        margin-bottom: 30px;
     }
 }
