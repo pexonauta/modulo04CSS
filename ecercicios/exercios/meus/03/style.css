@@ -26,14 +26,12 @@ html, body {
     font-size: 85%;
 }
 body {
-    background: black url('img/slidesho2.jpg') no-repeat center center fixed;
+    background: black no-repeat center center fixed;
     background-size: cover;
+    transition: 0.5s;
 }
 /* Cabecalho */
 
-.slideshow {
-    position: absolute;
-}
 header {
     margin-top: 20px;
     margin-bottom: 40px;
