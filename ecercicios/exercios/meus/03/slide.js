@@ -7,6 +7,8 @@ let imgs = [
 
 let time = 5000, contador = 0, max = imgs.length
 
+document.body.style.backgroundImage = `URL(img/slidesho1.jpg)`
+
 function trocarImagem () {
     document.body.style.backgroundImage = `URL(${imgs[contador]})`
     contador++
