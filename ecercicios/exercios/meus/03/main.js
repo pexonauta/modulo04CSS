@@ -151,6 +151,8 @@ b.setAttribute('value', '1B')
 c.setAttribute('value', '1C')
 d.setAttribute('value', '1D')
 
+// Colocando a imagem de fundo
+document.body.style.backgroundImage = `URL(img/slidesho1.jpg)`
 //MONTANDO AS PROXIMAS QUESTOES
 function proximaQuestao (nQuestao) {
     numero.textContent = nQuestao
@@ -164,6 +166,22 @@ function proximaQuestao (nQuestao) {
     b.setAttribute('value', nQuestao +'B')
     c.setAttribute('value', nQuestao +'C')
     d.setAttribute('value', nQuestao +'D')
+}
+// mudando a foto de fundo
+let imgs = [
+    "img/slidesho1.jpg",
+    "img/slidesho2.jpg",
+    "img/slidesho3.jpg",
+    "img/slidesho4.jpg",
+]
+let time = 5000, contador = 1, max = imgs.length
+function proximafoto() {
+    document.body.style.backgroundImage = `URL(${imgs[contador]})`
+    contador++
+
+    if (contador >= max) {
+        contador = 0
+    }
 }
 
 function bloquearAlternativas() {
@@ -215,6 +233,7 @@ function verificaseAcertou(nQuestao, resposta) {
             
         }else {
             proximaQuestao(proxima)
+            proximafoto()
         }
     }, 250)
     desbloquearAlternativas()
