@@ -60,9 +60,10 @@ header .logo{
 }
 .logo #pontos {
     margin-left: 20px;
-    color: rgb(0, 0, 0);
+    color: #4107df;
     font-family: var(--varfont2);
     font-size: 3em;
+    font-weight: bold;
 }
 
 main {
