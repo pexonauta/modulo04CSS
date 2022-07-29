@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon Do Meu Site -->
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mobile First</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho container">
+        <!-- Logo -->
+        <a href="index.html"><h1 class="logo">Mobile First</h1></a>
+        <!-- Botão Hamburguer (Abrir)-->
+        <button class="btn-menu bg-gradient"><ion-icon name="menu-outline"></ion-icon></button>
+        <nav class="menu">
+            <!-- Menu De Hamburguer (Fechar) -->
+            <a class="btn-close"><ion-icon name="close-outline"></ion-icon></a>
+            <ul>
+                <!-- Links Do Menu -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Banner com Cadastrar e Sobre -->
+    <div class="banner container">
+        <div class="title">
+            <!-- Título -->
+            <h2>Ouse Inovar !</h2>
+            <!-- Sub Título (Parágrafo) -->
+            <h3>Criamos experiências e estabelecemos ações estratégicas que conectam marcas e Consumidores.</h3>
+        </div>
+            <div class="buttons">
+                <!-- Botão De Cadastro -->
+                <button class="btn btn-cadastrar bg-white  radius">Cadastrar<ion-icon name="arrow-forward-outline"></ion-icon></button>
+                <!-- Botão De Sobre (Quem é a empresa) -->
+                <button class="btn btn-sobre bg-black radius">Sobre<ion-icon name="help-outline"></ion-icon></button>
+            </div>
+    </div>
+    <!-- Serviços Que Está Oferecendo -->
+    <main class="servicos container">
+        <article class="servico bg-white radius">
+            <!-- Imagem Com Âncora Sobre Algum Serviço-->
+            <a href=""#><img src="img/criacoes.jpg" alt="Campanha Publicitarias"></a>
+            <div class="inner">
+                <!-- Título -->
+                <a href="#">Campanhas Publicitárias</a>
+                <!-- Sub Título -->
+                <h4>Impressos,Vts e Jingles</h4>
+                <!-- Parágrafo Sobre o Serviço-->
+                <p>Se Voce está precisando de criação de algum material, folder, anúncio empresa no mais alto padrão de qualidade</p>
+            </div>
+        </article>
+        <article class="servico bg-white radius">
+            <!-- Imagem Com Âncora Sobre Algum Serviço-->
+            <a href=""#><img src="img/md.jpg" alt="Marketing Digital"></a>
+            <div class="inner">
+                <!-- Título -->
+                <a href="#">Marketing Digital</a>
+                <!-- Sub Título -->
+                <h4>Administração de Redes Sociais</h4>
+                <!-- Parágrafo Sobre o Serviço-->
+                <p>Como agência de publicidade aplicamos estratégias nos meios Digitais para que a seu negócio seja visto por milhões de usuários.
+                O Brasil é o 5º país mais conectado do mundo. Por este motivo, o seu negócio não pode ficar fora do mercado digital.
+                </p>
+            </div>
+        </article>
+        <article class="servico bg-white radius">
+            <!-- Imagem Com Âncora Sobre Algum Serviço-->
+            <a href=""#><img src="img/cs.jpg" alt="Criação de sites"></a>
+            <div class="inner">
+                <!-- Título -->
+                <a href="#">Marketing Digital</a>
+                <!-- Sub Título -->
+                <h4>Sites Administráveis</h4>
+                <!-- Parágrafo Sobre o Serviço-->
+                <p>Agora você pode administrar seu site quando e como quiser.
+                E melhor ainda pois você pode pagar por este serviço, pois desenvolvemos de forma. Seu site atualizado, com seus últimos produtos, integração com redes sociais, agora é possível.
+                </p>
+            </div>
+        </article>
+    </main>
+    <!-- NEWSLETTER -->
+    <section class="container newsletter bg-black">
+        <h2>Increva-se agora!</h2>
+        <h3>Receba Novidades, dicas e muito mais</h3>
+        <form action="">
+            <input class="bg-black radius" type="email" name="email" placeholder="Digite Seu E-mail">
+            <button class="bg-white radius">Cadastrar</button>
+        </form>
+    </section>
+    <footer class="container rodape bg-gradient">
+        <div class="social-icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-discord"></ion-icon></a>
+        </div>
+        <p class="copyright">
+            Copyright @ NodeProp 2016. Todos os direitos reservados
+        </p>
+    </footer>
+
+    <!-- Meu Script -->
+    <script src="js/main.js"></script>
+    <!-- Script Do IonIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Script Do BoosTrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
