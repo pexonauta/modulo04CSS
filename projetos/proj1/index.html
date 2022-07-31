@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Icon Site -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>task-List</title>
+</head>
+<body>
+    <div class="block1"></div>
+    <div class="block2"></div>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Wolf">
+            <h1>Super ToDo</h1>
+        </div>
+        <div class="internet">
+            <div class="inter">
+                <span class="inter-block"></span>
+                <span class="inter-text" for="">Conectado Novamente</span>
+            </div>
+            <p class="inter-text-off-on">Conexão Estável</p>
+        </div>
+    </header>
+    <div class="container">
+        <form  class="btn" action="" method="GET">
+            <button class="btn-add">+</button>
+            <input class="btn-text" type="text" placeholder="Digite Sua Tarefa">
+        </form>
+        <div class="list-container">
+            <div class="list">
+                <label class="item">
+                    <div class="item-check">
+                        <input type="checkbox">
+                        <span class="item-button"><ion-icon name="checkmark-outline"></ion-icon></span>
+                    </div>
+                    <span class="item-text">Limpar Casa</span>
+                </label>
+                <div class="property">
+                    <button class="edit">
+                        <ion-icon name="pencil-outline"></ion-icon>
+                    </button>
+                    <button class="delete">
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Feito Por <a href="#">Pexonauta</a></p>
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

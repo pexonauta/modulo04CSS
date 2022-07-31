@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 860px;
+            margin: 0 auto;
+            padding-top: 10%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .switch {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .switch .switch-text {
+            padding-right: 0.3rem;
+            font-size: 1.2rem;
+        }
+        .switch .switch-wrapper {
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            position: relative;
+        }
+        .switch .switch-wrapper .switch-button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            border-radius: 40px;
+            background-color: rgb(51, 48, 48);
+        }
+        .switch .switch-wrapper input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .switch .switch-wrapper .switch-button::before {
+            content: "";
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            left: 4px;
+            bottom: 4px;
+            border-radius: 50%;
+            transition: 0.5s all ease;
+            background-color: azure;
+        }
+        .switch .switch-wrapper input:checked ~ .switch-button{
+            background-color: rgb(12, 185, 26);
+        }
+        .switch .switch-wrapper input:checked ~ .switch-button::before{
+            transform:  translateX(26px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <label class="switch">
+            <div class="switch-wrapper">
+                <input type="checkbox">
+                <span class="switch-button"></span>
+            </div>
+            <span class="switch-text">Aceito os Assistir Todos os Videos</span>
+        </label>
+    </div>
+    
+</body>
+</html>
