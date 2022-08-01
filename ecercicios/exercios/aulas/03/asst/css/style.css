@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+:root {
+    --BfundoVerde: rgb(65, 184, 131);
+    --BfundoAzul: rgb(0, 212, 255);
+    --White: #fff;
+    --Black: #000;
+    --GlassWhite: rgba(255, 255, 255, 0.3);
+    --Glassblack: rgba(0, 0, 0, 0.3);
+}
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, var(--BfundoVerde)0%, var(--BfundoAzul) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    border: 2px solid var(--White);
+    padding: 30px 40px;
+    width: 40%;
+}
+
+.new-task-container {
+    background-color: var(--White);
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px var(--Glassblack);
+    display: flex;
+}
+
+.new-task-container input {
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.new-task-button {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: #41b883;
+    color: var(--White);
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.tasks-container {
+    background: var(--White);
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.task-delete-button {
+    background-color: #41b883;
+    color: var(--White);
+    padding: 12px;
+    border-radius: 5px;
+}
+.task-delete-button:hover {
+    cursor: pointer;
+}
+/* Utilities */
+.error {
+    border: 2px solid red !important;
+}
+
+.error::placeholder {
+    color: red;
+}
+
+.completed {
+    text-decoration: line-through;
+}

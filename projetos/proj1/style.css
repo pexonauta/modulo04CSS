@@ -310,7 +310,6 @@ footer a:hover {
     color: rgb(153, 6, 128);
     text-decoration: underline;
 }
-
 /* Mobile First */
 /* SMALL DEVICES - SMARTPHONES */
 @media screen and (max-width: 428px) {

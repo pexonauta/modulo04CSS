@@ -1,0 +1,7 @@
+/* Ultilities */
+.error {
+    border: 1px solid rgba(255, 0, 0, 0.7) !important;
+}
+.error .btn-text::placeholder {
+    color: red !important;
+}
