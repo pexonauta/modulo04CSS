@@ -188,6 +188,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: pointer;
 }
 .list-container .list:last-child {
     margin-bottom: 0;
